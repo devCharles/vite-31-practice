@@ -3,16 +3,7 @@ import clsx from "clsx";
 export default function Card(props) {
   return (
     <article
-      // className={
-      //   "bg-[rgb(32_33_39)] p-6 rounded-xl space-y-4" +
-      //   " " +
-      //   props.className +
-      //   " " +
-      //   (props.isNew === true ? "border-2 border-yellow-400" : "") +
-      //   " " +
-      //   (props.isHot === true ? "bg-red-500 border-rose-400" : "")
-      // }
-
+      onClick={props.onClick}
       className={clsx(
         "bg-[rgb(32_33_39)] p-6 rounded-xl space-y-4",
         props.className,

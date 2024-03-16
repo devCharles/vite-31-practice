@@ -1,15 +1,19 @@
+import { onClick } from "../eventHandlers";
+
 export const features = [
   {
     emoji: "💡",
     feature: "Instant Server Start",
     description:
       "On demand file serving over native ESM, no bundling required!",
+    onClick: () => console.log("hola desde features file"),
   },
   {
     emoji: "⚡️",
     feature: "Lightning Fast HMR",
     description:
       "Hot Module Replacement (HMR) that stays fast regardless of app size.",
+    onClick,
   },
   {
     emoji: "🛠️",
